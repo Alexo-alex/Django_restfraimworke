@@ -8,11 +8,6 @@ from .serializer import *
 from .models import *
 
 
-def get_persons(request):
-    persons = Person.objects.all()
-    return render(request, '', persons)
-
-
 class PersonListView(APIView):
 
     def get(self, request):
